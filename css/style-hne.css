@@ -1,0 +1,405 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+header, nav, section, article, aside, footer {
+	display: block;
+}
+body {
+	font: 14px/18px "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+a {
+	color: #8784bf;
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+	color: #7ac142;
+}
+/* Begin of styles for the demonstration (you can remove them) */
+a.expand {
+	width: 150px;
+	display: block;
+	margin: 10px 0 0;
+}
+a.expand:hover {
+	height: 500px;
+}
+/* End of of styles for the demonstration */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 1;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+h3 {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+h5 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h6 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+p {
+	margin: 0 0 18px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+#wrapper {
+	/*width: 1024px;
+	margin: 0 auto;*/
+	width: 100%;
+	min-width: 1024px;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	height: 380px;
+	/*background: #FFF;*/
+}
+/*.index-bck {background: url(../images/hne-home1.jpg) no-repeat; height: 700px; max-width:100%; width:100%; z-index: -1; position: absolute;}*/
+
+.index-bck {
+	background: url(../images/hne-home1.jpg) no-repeat; 
+	height: 700px; 
+	background-attachment: fixed;
+	-moz-background-size: 100% 100%;           
+	-o-background-size: 100% 100%;           
+	-webkit-background-size: 100% 100%;      
+	background-size: 100% 100%;
+}
+.free-benefits { background: url(../images/free-benefits-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.renewal-bck {background: url(../images/renewal-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+.coveredservices-bck {background: url(../images/coveredservices-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.hne-bck {background: url(../images/hne-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.enrollbenefits-bck {background: url(../images/enrollbenefits-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.masshealth-bck {background: url(../images/masshealth-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.processoverview-bck {background: url(../images/processoverview-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.healthyevents-bck {background: url(../images/healthyevents-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.resourcelinks-bck {background: url(../images/resourcelinks-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.covereddrugs-bck {background: url(../images/covereddrugs-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.cbhi-bck {background: url(../images/cbhi-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.findprovider-bck {background: url(../images/findprovider-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.contact-bck {background: url(../images/contact-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+.faq-bck {background: url(../images/faq-back.jpg) no-repeat; height: 700px; background-attachment: fixed; -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%;}
+
+.socialicon {
+			padding: 10px 0 0 20px;
+		}
+.logotype {
+			width: 278px;
+			height: 237px;
+			background: url(../images/logo_hne.png) no-repeat;
+			margin-left: 70px; 
+		}
+.logotype a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+.papernote {
+			width: 423px;
+			height: 123px;
+			background: url(../images/paper_note.png) no-repeat;
+			padding: 0;
+		}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+	border-left: 250px solid transparent;
+	border-right: 250px solid transparent;
+	height: 1%;
+	position: relative;
+}
+#middle:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+#container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	margin-right: -100%;
+}
+#content {
+	padding: 30px 20px;
+}
+
+.left {
+  float: left;
+  width: 450px;
+  margin-right: 20px;
+}
+
+.left-provider {
+  float: left;
+  width: 700px;
+  /*margin-right: 20px;*/
+}
+
+.left ul {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+
+.left li {
+  line-height: 20px;
+}
+
+.right {
+  float: left;
+  width: 200px;
+}
+
+
+/* Sidebar Left
+-----------------------------------------------------------------------------*/
+#sideLeft {
+	float: left;
+	width: 255px;
+	position: relative;
+	/*background: #FFF;*/
+	left: -250px;
+}
+
+.home-icon {
+			width: 30px;
+			height: 30px;
+			margin-left: 45px;
+			background: url(../images/home-icon.png) no-repeat;
+		}
+.home-icon a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+.main_nav {
+		    margin-left: 35px;
+		  }
+.categories {
+				list-style-type: none;
+			}
+.btn_nav {
+					background: url(../images/icon-hne.png) no-repeat 16px 5px;
+					-moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+					-webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+					box-shadow:inset 0px 1px 0px 0px #fce2c1;
+					background-color:#fec985;
+					-moz-border-radius: 120px 50px 50px 120px;
+					-webkit-border-radius: 120px 50px 50px 120px;
+					border-top-left-radius: 120px;
+					border-top-right-radius: 50px;
+					border-bottom-right-radius: 50px;
+					border-bottom-left-radius: 120px;
+					/*border-radius: 120px 50px 50px 120px;*/
+					border:1px solid #eeb44f;
+					display:inline-block;
+					color:#8784c2;
+					font-family:arial;
+					font-size:19px;
+					font-weight:normal;
+					text-decoration:none;
+					padding:6px 54px;
+					margin: 0 0 10px 0;
+					width: 100px;
+				}.btn_nav:hover {
+					background-color:#fb9e25;
+					color: #FFF;
+					text-decoration: none;
+				}.btn_nav:active {
+					position:relative;
+					top:1px;
+				}
+.categories ul {margin-bottom: 10px; list-style-type: none;}
+				.categories ul a {margin-left: 60px; font-size: 15px; text-decoration: none; color: #8784bf; display: block; width: 143px; } 
+				.categories ul a:hover {color: #7ac142;}
+				/*ul li{ border-bottom: 1px solid #eee; }*/
+				/*ul li:hover {background: #eee;}*/
+				.categories ul li ul li {margin-left: 6px;}
+ul{
+    margin: 3px;
+    /*border:1px solid red;  */
+}
+ul ul{
+    display:none;   
+}
+ul li:hover>ul{
+    /*display:block;   */
+}
+
+
+
+/* Sidebar Right
+-----------------------------------------------------------------------------*/
+#sideRight {
+	float: right;
+	margin-right: -250px;
+	width: 250px;
+	position: relative;
+	/*background: #FFF;*/
+}
+
+#sideRight img {
+  margin-left: 70px;
+}
+
+.lang {
+				list-style-type: none;
+				margin-left: 40px;
+	  }
+.btn_nav_es {
+					-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+					-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+					box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+					background-color:#79bbff;
+					-moz-border-radius: 120px 0px 0px 120px;
+					-webkit-border-radius: 120px 0px 0px 120px;
+					border-top-left-radius: 120px;
+					border-top-right-radius: 0px;
+					border-bottom-right-radius: 0px;
+					border-bottom-left-radius: 120px;
+					/*border-radius: 120px 0px 0px 120px;*/
+					border:1px solid #84bbf3;
+					display:inline-block;
+					color:#6f6baf;
+					font-family:arial;
+					font-size:19px;
+					font-weight:normal;
+					padding:6px 54px;
+					text-decoration:none;
+					margin: 0 0 10px 0;
+					width: 100px;
+				}.btn_nav_es:hover {
+					background-color:#378de5;
+					color: #FFF;
+					text-decoration: none;
+				}.btn_nav_es:active {
+					position:relative;
+					top:1px;
+				}
+
+				.btn_nav_find {
+					-moz-box-shadow:inset 0px 1px 0px 0px #e6cafc;
+					-webkit-box-shadow:inset 0px 1px 0px 0px #e6cafc;
+					box-shadow:inset 0px 1px 0px 0px #e6cafc;
+					background-color:#c579ff;
+					-moz-border-radius: 120px 0px 0px 120px;
+					-webkit-border-radius: 120px 0px 0px 120px;
+					border-top-left-radius: 120px;
+					border-top-right-radius: 0px;
+					border-bottom-right-radius: 0px;
+					border-bottom-left-radius: 120px;
+					/*border-radius: 120px 0px 0px 120px;*/
+					border:1px solid #c579ff;
+					display:inline-block;
+					color:#ffffff;
+					font-family:arial;
+					font-size:19px;
+					font-weight:normal;
+					padding:6px 54px;
+					text-decoration:none;
+					margin: 0 0 10px 0;
+					width: 100px;
+				}.btn_nav_find:hover {
+					background-color:#a341ee;
+					color: #FFF;
+					text-decoration: none;
+				}.btn_nav_find:active {
+					position:relative;
+					top:1px;
+				}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	height: 30px;
+	background: #cee4ec;
+}
+.copyright {
+				float:left; 
+				width: 400px; 
+				height: 10px; 
+				padding: 5px 5px 10px 45px;
+			}
+.navcontainer {
+ 				float: right;
+ 				margin: 2px 0 0 0;
+ 			  }
+
+.navcontainer ul {
+				padding-left: 0;
+				margin-left: 0;
+				 
+				width: 100%;
+				font-size: 12px;
+				margin: 0 0 0px 0px;
+				}
+
+.navcontainer ul li { display: inline; }
+
+.navcontainer ul li a {
+				padding: 0.2em 1em;
+				color: #000;
+				text-decoration: none;
+				float: left;
+				border-right: 1px solid #000;
+				}
+
+.navcontainer ul li a:hover
+				{
+				/*background-color: #369;*/
+				color: #000;
+				text-decoration: underline;
+				}
+
+.navcontainer li.none a {border-right: none;}
+
+			}
+
+
+
+
+
